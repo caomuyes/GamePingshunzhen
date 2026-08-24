@@ -1,0 +1,13 @@
+{
+  "name": "@psz/effects",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@psz/game-state": "workspace:*",
+    "framer-motion": "^12.0.0",
+    "react": "^19.1.0"
+  }
+}

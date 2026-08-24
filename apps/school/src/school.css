@@ -1,0 +1,191 @@
+.school-root {
+  min-height: 100vh;
+  background: #f4f6f4;
+  color: #222;
+  font-family: "SimSun", "Songti SC", serif;
+}
+.school-topbar {
+  background: #1c4a7a;
+  color: #dfeaf5;
+  font-size: 12px;
+  padding: 4px 0;
+}
+.school-topbar-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.school-header {
+  background: #fff;
+  border-bottom: 3px solid #b32025;
+  padding: 18px 0;
+}
+.school-header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.school-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #b32025;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.school-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1c4a7a;
+  letter-spacing: 2px;
+}
+.school-title small {
+  display: block;
+  font-size: 12px;
+  color: #6a7686;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.school-nav {
+  background: #1c4a7a;
+}
+.school-nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.school-nav-inner a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 13px;
+  font-size: 14px;
+}
+.school-nav-inner a:hover {
+  background: #16395f;
+}
+.school-body {
+  max-width: 1000px;
+  margin: 16px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 14px;
+}
+.school-main {
+  background: #fff;
+  border: 1px solid #d7dde0;
+  padding: 18px 22px;
+  min-height: 420px;
+}
+.school-main h1 {
+  font-size: 22px;
+  color: #1c4a7a;
+  border-bottom: 2px solid #b32025;
+  padding-bottom: 8px;
+  margin: 0 0 12px;
+}
+.school-main h2 {
+  font-size: 16px;
+  color: #1c4a7a;
+}
+.school-article-meta {
+  color: #6a7686;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.school-article-body {
+  font-size: 15px;
+  line-height: 2;
+  text-align: justify;
+}
+.school-news-item {
+  padding: 12px 0;
+  border-bottom: 1px dashed #d7dde0;
+}
+.school-news-item a {
+  color: #1c4a7a;
+  font-size: 15px;
+  text-decoration: none;
+}
+.school-news-item a:hover {
+  text-decoration: underline;
+}
+.school-news-item .date {
+  color: #8a949e;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.school-side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.school-side-box {
+  background: #fff;
+  border: 1px solid #d7dde0;
+}
+.school-side-box h3 {
+  background: #1c4a7a;
+  color: #fff;
+  font-size: 13px;
+  margin: 0;
+  padding: 7px 12px;
+  font-weight: 400;
+}
+.school-side-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px 12px;
+}
+.school-side-box li {
+  margin: 5px 0;
+  font-size: 13px;
+}
+.school-side-box a {
+  color: #1c4a7a;
+  text-decoration: none;
+}
+.school-footer {
+  background: #2f5d7c;
+  color: #cfe0ea;
+  text-align: center;
+  padding: 14px;
+  font-size: 12px;
+}
+.school-gate {
+  color: #888;
+  text-align: center;
+  padding: 50px 20px;
+}
+.school-file {
+  border: 1px dashed #1c4a7a;
+  background: #f3f7fb;
+  padding: 14px;
+  margin: 14px 0;
+  font-size: 13px;
+}
+.school-search input {
+  width: 240px;
+  padding: 6px 10px;
+  border: 1px solid #9fb2c0;
+  font-family: inherit;
+}
+.school-search button {
+  padding: 6px 14px;
+  background: #1c4a7a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}

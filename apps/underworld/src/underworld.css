@@ -1,0 +1,237 @@
+.uw-root {
+  min-height: 100vh;
+  background: #020308;
+  color: #a8c0d0;
+  font-family: "Consolas", "Courier New", "SimSun", monospace;
+  position: relative;
+  overflow-x: hidden;
+}
+.uw-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+}
+.uw-boot {
+  background: #03060b;
+  border: 1px solid #16222e;
+  padding: 14px;
+  font-size: 13px;
+  line-height: 1.9;
+  min-height: 60px;
+  white-space: pre-wrap;
+}
+.uw-boot .ok {
+  color: #5fd08a;
+}
+.uw-boot .warn {
+  color: #d0a85f;
+}
+.uw-title {
+  text-align: center;
+  color: #7fb0d0;
+  font-size: 24px;
+  letter-spacing: 6px;
+  margin: 18px 0 4px;
+  text-shadow: 0 0 16px rgba(90, 160, 220, 0.5);
+}
+.uw-sub {
+  text-align: center;
+  color: #33485c;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+.uw-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #101c26;
+  padding-bottom: 12px;
+}
+.uw-nav a {
+  color: #5f8fb0;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 10px;
+  border: 1px solid transparent;
+}
+.uw-nav a:hover {
+  color: #b0d8f0;
+  border-color: #1a3040;
+  background: #060d14;
+}
+.uw-section-title {
+  color: #7fb0d0;
+  font-size: 16px;
+  border-left: 3px solid #2a5a80;
+  padding-left: 10px;
+  margin: 16px 0 10px;
+}
+.uw-record {
+  border: 1px solid #12202c;
+  background: #050a10;
+  padding: 11px 13px;
+  margin-bottom: 8px;
+}
+.uw-record a {
+  color: #9cc8e0;
+  text-decoration: none;
+  font-size: 14px;
+}
+.uw-record a:hover {
+  color: #e0f0ff;
+}
+.uw-record .meta {
+  color: #3d5568;
+  font-size: 11px;
+  margin-top: 4px;
+}
+.uw-detail {
+  border: 1px solid #152432;
+  background: #04080d;
+  padding: 18px;
+}
+.uw-detail h1 {
+  color: #9cc8e0;
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+.uw-detail .body {
+  color: #a8c0d0;
+  font-size: 14px;
+  line-height: 2;
+  white-space: pre-wrap;
+  margin-top: 12px;
+}
+.uw-gate {
+  text-align: center;
+  padding: 70px 20px;
+  color: #3d5568;
+}
+.uw-gate h1 {
+  color: #5f8fb0;
+  font-size: 22px;
+}
+.uw-gate input {
+  background: #04080d;
+  border: 1px solid #1a3040;
+  color: #9cc8e0;
+  padding: 9px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  width: 300px;
+  text-align: center;
+  margin-top: 14px;
+}
+.uw-btn {
+  display: inline-block;
+  background: #0a1520;
+  border: 1px solid #1a3040;
+  color: #7fb0d0;
+  padding: 7px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.uw-btn:hover {
+  background: #10202e;
+  color: #b0d8f0;
+}
+.uw-moji {
+  color: #d0a8a8;
+  font-size: 17px;
+  letter-spacing: 2px;
+  background: #03060b;
+  border: 1px dashed #3a2020;
+  padding: 14px;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+.uw-decode-tool {
+  background: #04080d;
+  border: 1px solid #152432;
+  padding: 14px;
+  margin-top: 12px;
+}
+.uw-decode-tool label {
+  font-size: 12px;
+  color: #5f8fb0;
+}
+.uw-decode-tool input,
+.uw-decode-tool select {
+  background: #03060b;
+  border: 1px solid #1a3040;
+  color: #9cc8e0;
+  padding: 6px 8px;
+  font-family: inherit;
+  font-size: 13px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.uw-result {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.uw-final-q {
+  border: 1px solid #152432;
+  background: #04080d;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+.uw-final-q .q {
+  color: #9cc8e0;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.uw-final-q label {
+  display: block;
+  font-size: 13px;
+  margin: 4px 0;
+  cursor: pointer;
+}
+.uw-final-q input {
+  margin-right: 6px;
+}
+.uw-ending {
+  max-width: 620px;
+  margin: 30px auto;
+  border: 1px solid #2a5a80;
+  background: #040a12;
+  padding: 26px 30px;
+  line-height: 2;
+  color: #b8d0e0;
+}
+.uw-ending h1 {
+  color: #9cc8e0;
+  font-size: 22px;
+  text-align: center;
+  border-bottom: 1px solid #1a3040;
+  padding-bottom: 12px;
+}
+.uw-404 {
+  text-align: center;
+  color: #3d5568;
+  padding: 70px 20px;
+}
+.uw-register {
+  max-width: 460px;
+  margin: 24px auto;
+  border: 1px solid #1a3040;
+  background: #04080d;
+  padding: 20px;
+  text-align: center;
+}
+.uw-register input {
+  width: 90%;
+  padding: 9px;
+  background: #03060b;
+  border: 1px solid #1a3040;
+  color: #9cc8e0;
+  font-family: inherit;
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0;
+}

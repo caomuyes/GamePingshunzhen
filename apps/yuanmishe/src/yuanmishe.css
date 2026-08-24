@@ -1,0 +1,244 @@
+.yms-root {
+  min-height: 100vh;
+  background: #0e1016;
+  color: #b8c4cc;
+  font-family: "SimSun", "NSimSun", monospace;
+  padding: 18px 0 40px;
+  position: relative;
+}
+.yms-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.yms-title {
+  text-align: center;
+  color: #c8a24a;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-shadow: 0 0 12px rgba(200, 162, 74, 0.5);
+  margin-bottom: 4px;
+}
+.yms-sub {
+  text-align: center;
+  color: #5f6b75;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.yms-window {
+  background: #1b212b;
+  border: 2px solid #3d4a58;
+  box-shadow: 0 0 0 1px #0a0c10, 0 6px 30px rgba(0, 0, 0, 0.7);
+  margin-bottom: 16px;
+}
+.yms-titlebar {
+  background: linear-gradient(90deg, #2a3a4c, #1c2735);
+  color: #9fb2c4;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #33404d;
+}
+.yms-body {
+  padding: 14px 16px;
+}
+.yms-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.yms-nav a,
+.yms-btn {
+  display: inline-block;
+  background: #232c38;
+  border: 1px solid #3d4a58;
+  color: #aab8c4;
+  padding: 5px 12px;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.yms-nav a:hover,
+.yms-btn:hover {
+  background: #2c3948;
+  color: #e8c87a;
+}
+.yms-board {
+  border: 1px solid #2c3a48;
+  margin-bottom: 8px;
+  background: #151b23;
+}
+.yms-board a {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  color: #9fb2c4;
+  text-decoration: none;
+}
+.yms-board a:hover {
+  background: #1d2631;
+}
+.yms-board .name {
+  color: #c8d6e4;
+}
+.yms-board .lock {
+  color: #8a6a6a;
+}
+.yms-board .desc {
+  font-size: 11px;
+  color: #5f6b75;
+}
+.yms-terminal {
+  background: #0b0f14;
+  border: 1px solid #22303c;
+  padding: 12px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 13px;
+  color: #7fd08a;
+  min-height: 120px;
+  white-space: pre-wrap;
+}
+.yms-terminal .prompt {
+  color: #e8c87a;
+}
+.yms-terminal input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #7fd08a;
+  font-family: inherit;
+  font-size: 13px;
+  width: 70%;
+}
+.yms-login-box {
+  max-width: 420px;
+  margin: 20px auto;
+  text-align: center;
+}
+.yms-login-box input {
+  width: 100%;
+  padding: 9px 10px;
+  background: #0b0f14;
+  border: 1px solid #3d4a58;
+  color: #e8c87a;
+  font-family: inherit;
+  font-size: 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.yms-error {
+  color: #c86a6a;
+  font-size: 13px;
+  margin-top: 8px;
+}
+.yms-success {
+  color: #7fd08a;
+  font-size: 13px;
+  margin-top: 8px;
+}
+.yms-thread {
+  border: 1px solid #2c3a48;
+  background: #151b23;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+.yms-thread a {
+  color: #c8d6e4;
+  text-decoration: none;
+  font-size: 14px;
+}
+.yms-thread a:hover {
+  color: #e8c87a;
+}
+.yms-thread .meta {
+  font-size: 11px;
+  color: #5f6b75;
+  margin-top: 4px;
+}
+.yms-post {
+  background: #151b23;
+  border: 1px solid #2c3a48;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+.yms-post h1 {
+  color: #c8d6e4;
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+.yms-post .body {
+  color: #aab8c4;
+  font-size: 14px;
+  line-height: 1.9;
+  white-space: pre-wrap;
+  margin-top: 10px;
+}
+.yms-user {
+  color: #7fa8c8;
+  font-size: 12px;
+}
+.yms-user .kind {
+  color: #8a8a6a;
+}
+.yms-404 {
+  text-align: center;
+  color: #8a6a6a;
+  padding: 60px 20px;
+  font-size: 15px;
+}
+.yms-game-wrap {
+  text-align: center;
+}
+.yms-game {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #3d4a58;
+  background: #10151c;
+  cursor: pointer;
+}
+.yms-hint {
+  font-size: 12px;
+  color: #5f6b75;
+  margin-top: 8px;
+}
+.yms-dialog {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 950;
+}
+.yms-dialog-inner {
+  background: #1b212b;
+  border: 2px solid #4a5a6a;
+  max-width: 460px;
+  padding: 20px;
+  color: #c8d6e4;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+}
+.yms-dialog-inner .q {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+.yms-dialog-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.yms-key {
+  background: #0b0f14;
+  border: 1px dashed #c8a24a;
+  color: #e8c87a;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  user-select: all;
+}

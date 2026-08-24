@@ -1,0 +1,15 @@
+{
+  "name": "@psz/shared-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@psz/game-state": "workspace:*",
+    "@psz/puzzle-engine": "workspace:*",
+    "@psz/shared-data": "workspace:*",
+    "react": "^19.1.0",
+    "react-router-dom": "^7.6.0"
+  }
+}

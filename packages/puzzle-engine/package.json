@@ -1,0 +1,12 @@
+{
+  "name": "@psz/puzzle-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@psz/game-state": "workspace:*",
+    "@psz/shared-data": "workspace:*"
+  }
+}

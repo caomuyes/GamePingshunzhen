@@ -1,0 +1,114 @@
+.psz-glitch {
+  position: relative;
+  animation: psz-glitch-shift 2.4s infinite steps(2, jump-none);
+}
+.psz-glitch::before,
+.psz-glitch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+.psz-glitch.strong::before {
+  opacity: 0.14;
+  background: linear-gradient(90deg, transparent 0 40%, #ff2bd6 40% 42%, transparent 42% 60%, #00e5ff 60% 62%, transparent 62%);
+  mix-blend-mode: screen;
+  animation: psz-glitch-bar 0.7s infinite;
+}
+.psz-glitch.strong::after {
+  opacity: 0.12;
+  background: linear-gradient(0deg, transparent 0 55%, #ffffff 55% 57%, transparent 57%);
+  animation: psz-glitch-bar 0.9s infinite reverse;
+}
+@keyframes psz-glitch-shift {
+  0%, 91% { transform: translate(0); filter: none; }
+  92% { transform: translate(-3px, 1px) skewX(2deg); filter: hue-rotate(20deg); }
+  94% { transform: translate(3px, -1px); filter: none; }
+  96% { transform: translate(-2px, 0) skewX(-3deg); filter: saturate(2); }
+  98% { transform: translate(0); filter: none; }
+}
+@keyframes psz-glitch-bar {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(8px); }
+  40% { transform: translateY(-6px); }
+  60% { transform: translateY(3px); }
+  80% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.psz-crt::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 900;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.22) 0px,
+    rgba(0, 0, 0, 0.22) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+.psz-crt::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 901;
+  background: radial-gradient(ellipse at center, transparent 58%, rgba(0, 0, 0, 0.55) 100%);
+  animation: psz-crt-flicker 6s infinite;
+}
+@keyframes psz-crt-flicker {
+  0%, 97%, 100% { opacity: 1; }
+  98% { opacity: 0.86; }
+  99% { opacity: 0.95; }
+}
+
+.psz-scanline {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 902;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.035) 0px,
+    rgba(255, 255, 255, 0.035) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  mix-blend-mode: overlay;
+}
+
+.psz-flicker {
+  animation: psz-flicker-anim 3.7s infinite;
+}
+@keyframes psz-flicker-anim {
+  0%, 89%, 92%, 100% { opacity: 1; }
+  90% { opacity: 0.55; }
+  91% { opacity: 0.9; }
+  97% { opacity: 0.75; }
+}
+
+.psz-cursor-glow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 903;
+  mix-blend-mode: screen;
+  background: radial-gradient(circle, rgba(80, 220, 255, 0.14), transparent 65%);
+  transform: translate(-50%, -50%);
+}
+
+.psz-noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 899;
+  opacity: 0.05;
+}
